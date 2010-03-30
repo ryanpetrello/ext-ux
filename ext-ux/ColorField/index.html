@@ -1,0 +1,87 @@
+<html>
+<head>
+  <title>Ext.ux.ColorField</title>
+  
+  <script src="ext3/adapter/ext/ext-base.js" type="text/javascript"></script>
+  <script src="ext3/ext-all-debug.js" type="text/javascript"></script>
+  <script src="Ext.ux.ColorField.js" type="text/javascript"></script>
+  <script src="example.js" type="text/javascript"></script>
+  
+  <link rel="stylesheet" type="text/css" href="ext3/resources/css/ext-all.css"></link>
+  <link rel="stylesheet" type="text/css" href="Ext.ux.ColorField.css" />
+  
+  <style type="text/css">
+    body  {
+      margin: 25px;
+      line-height: 1.25em;
+    }
+    h1  {
+      font-size: 2em;
+    }
+    h2  {
+      font-size: 1.5em;
+    }
+    .support  {
+      overflow: hidden;
+      margin: 1em 0;
+    }
+    .support dt  {
+      font-weight: bold;
+      margin: auto .5em;
+    }
+    .support dt, dd  {
+      font-size: 1em;
+    }
+    table  {
+      margin: auto 0 25px 0;
+    }
+    th  {
+      font-weight: bold;
+    }
+    th, td  {
+      padding: 10px;
+    }
+    dd  {
+      margin-left: 25px;
+    }
+    p  {
+      margin: 1em auto;
+    }
+    .yes  {
+      color: green;
+    }
+    .no  {
+      color: red;
+    }
+  </style>
+  
+</head>
+<body>
+  
+  <h1>Ext.ux.ColorField</h1>
+  <p>ColorField is a user extension component for the popular Javascript library, <a href='http://extjs.com'>ExtJS</a>.</p>
+  <p>Though the current version of ExtJS already has <a href='http://extjs.com/deploy/dev/docs/?class=Ext.ColorPalette'>a palette component</a> which allows you to select colors, it is not quite fancy enough for my liking.  The ColorField widget incorporates a much nicer color picker into a TriggerField, making it highly effective and reusable as a form component.</p>
+  <h2>Browser Compatibility</h2>
+  <p>The ColorField widget is implemented in a slightly untraditional way.  Most stock DHTML color pickers found on the web utilize complex math or spurious DOM population to create their clickable palettes.  These methods can end up being costly, and difficult to implement and maintain.  This widget, however, uses <a href='http://www.whatwg.org/specs/web-apps/current-work/#canvas' target='window'>&lt;canvas&gt;</a> to draw its clickable palette.</p>
+  <p>Not all browsers currently have sufficient support for the &lt;canvas&gt; element.  In browsers without necessary &lt;canvas&gt; support, the color picker will gracefully fall back to the one provided with ExtJS.  The following is a list of platforms this widget has been tested against:</p>
+  <dl class='support'>
+    <dt class='yes'>Firefox 2 (Win/Mac) </dt>
+    <dt class='yes'>Opera 9+ (Win)</dt>
+    <dt class='yes'>Safari 3+, Chrome (Latest) (Win/Mac)</dt>
+    <dt>
+  </dl>
+  
+  <h2>Download Source</h2>
+  <p>This widget is built for compatability with ExtJS 3.x, and will likely (thought I've not tried) break with prior versions.</p>
+  
+  <h2>Live Demo</h2>
+  <p>Change the values in the Ext form fields below and watch the effects!</p>
+  <h3>Form Field Example</h3>
+  <div id='form-example'></div>
+  <h3>Fallback Example</h3>
+  <div id='fb-example'></div>
+  
+  <p><a href='http://ryanpetrello.com'>ryanpetrello.com</a></p>
+  
+</body>
+</html>
